@@ -1,13 +1,14 @@
-## Mask-and contrast-enhanced spatio-temporal learning for urban flow prediction
+## Mask- and Contrast-Enhanced Spatio-Temporal Learning for Urban Flow Prediction
 
 [![DOI](https://img.shields.io/badge/DOI-10.1145%2F3583780.3614958-blue)](https://doi.org/10.1145/3583780.3614958)
-[![Open access](https://img.shields.io/badge/open%20access-gold-brightgreen)](https://dl.acm.org/doi/pdf/10.1145/3583780.3614958)
-[![PDF](https://img.shields.io/badge/PDF-download-lightgrey)](https://dl.acm.org/doi/pdf/10.1145/3583780.3614958)
-[![Project page](https://img.shields.io/badge/project-page-blue)](https://codezx6.github.io/papers/mcstl.html)
+[![Free to read](https://img.shields.io/badge/free%20to%20read-ACM%20DL-brightgreen)](https://doi.org/10.1145/3583780.3614958)
+[![Paper page](https://img.shields.io/badge/paper-page-blue)](https://codezx6.github.io/papers/mcstl.html)
 
-Official implementation of **MCSTL** — *Mask- and Contrast-Enhanced Spatio-Temporal Learning for Urban Flow Prediction* (CIKM 2023). MCSTL pre-trains an urban flow model with a mask-reconstruction task across space and time and a graph-based contrastive task that weights regions by inter-regional attention, then fine-tunes for flow prediction.
+Official implementation of **MC-STL** (CIKM 2023): *Mask- and Contrast-Enhanced Spatio-Temporal Learning for Urban Flow Prediction*. The paper calls the method **MC-STL**; this repository is named MCSTL.
 
-📄 Paper: https://doi.org/10.1145/3583780.3614958 · 🌐 Project page with abstract, FAQ and BibTeX: https://codezx6.github.io/papers/mcstl.html · 👤 Author: [Xu Zhang](https://codezx6.github.io)
+MC-STL pre-trains two encoders for urban flow prediction: a ViT encoder learns to reconstruct regions masked at different timestamps, and its attention weights also build a GCN adjacency matrix; a global-local cross-attention encoder learns a temporal-order contrastive task. It reaches RMSE 14.53 on full TaxiBJ.
+
+📄 Paper: https://doi.org/10.1145/3583780.3614958 · 🌐 Paper page with quoted results, FAQ and BibTeX: https://codezx6.github.io/papers/mcstl.html
 
 
 ```bibtex

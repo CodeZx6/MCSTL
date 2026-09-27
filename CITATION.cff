@@ -1,0 +1,56 @@
+cff-version: 1.2.0
+message: If you use this code, please cite the paper in preferred-citation.
+type: software
+title: 'MC-STL: code for "Mask- and Contrast-Enhanced Spatio-Temporal Learning for Urban Flow Prediction"'
+authors:
+- family-names: Zhang
+  given-names: Xu
+- family-names: Gong
+  given-names: Yongshun
+- family-names: Zhang
+  given-names: Xinxin
+- family-names: Wu
+  given-names: Xiaoming
+- family-names: Zhang
+  given-names: Chengqi
+- family-names: Dong
+  given-names: Xiangjun
+repository-code: https://github.com/CodeZx6/MCSTL
+url: https://codezx6.github.io/papers/mcstl.html
+abstract: 'MC-STL pre-trains two encoders for urban flow prediction: a ViT encoder learns to reconstruct regions masked at
+  different timestamps, and its attention weights also build a GCN adjacency matrix; a global-local cross-attention encoder
+  learns a temporal-order contrastive task. It reaches RMSE 14.53 on full TaxiBJ.'
+keywords:
+- urban flow prediction
+- spatio-temporal predictive modeling
+- spatio-temporal pre-training
+- mask-enhanced learning
+- contrastive learning
+- traffic prediction
+- graph convolutional network (GCN)
+preferred-citation:
+  type: conference-paper
+  title: Mask- and Contrast-Enhanced Spatio-Temporal Learning for Urban Flow Prediction
+  authors:
+  - family-names: Zhang
+    given-names: Xu
+  - family-names: Gong
+    given-names: Yongshun
+  - family-names: Zhang
+    given-names: Xinxin
+  - family-names: Wu
+    given-names: Xiaoming
+  - family-names: Zhang
+    given-names: Chengqi
+  - family-names: Dong
+    given-names: Xiangjun
+  year: 2023
+  doi: 10.1145/3583780.3614958
+  url: https://doi.org/10.1145/3583780.3614958
+  collection-title: Proceedings of the 32nd ACM International Conference on Information and Knowledge Management (CIKM '23)
+  conference:
+    name: 32nd ACM International Conference on Information and Knowledge Management (CIKM '23)
+  publisher:
+    name: ACM
+  start: '3298'
+  end: '3307'
